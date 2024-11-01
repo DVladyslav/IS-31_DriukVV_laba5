@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>= Task 5 =</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="styletask5.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="button-container">
+            <h1>= Завдання №5 =</h1>
+            <input type="button" class="button" onclick="window.location.href='./index.html'"
+                value="На початкову сторінку">
+        </div>
+        <div class= "title-alarm">
+            <h1> ⏰ Будильник ⏰ </h1>
+          </div>
+          <div class="main-alarm-container display-flex">
+            <div class="clock-container display-flex">
+                <!-- Відображення поточного часу -->
+              <div class="current-time margin-bottom" id= "current-time">_ : _ : _ </div>
+              <!-- Форма для встановлення будильника -->
+              <form class="alarm-form display-flex margin-bottom">
+                <!-- Вибір дати (день, місяць, рік) -->
+                <div>
+
+                    <select name="day" id="day" required></select>
+                    <select name="month" id="month" required></select>
+                    <select name="year" id="year" required></select>
+                </div>
+                 <!-- Вибір часу (години, хвилини, секунди, AM/PM) -->
+                <div>
+                <select name="hours" id="hours" required></select>
+                <select required name="minutes" id="minutes"></select>
+                <select required name="seconds" id="seconds"></select>
+                <select required name="am-pm" id="am-pm">
+                  <option value="AM">AM</option>
+                  <option value="PM">PM</option>
+                </select>
+                </div>
+                <!-- Кнопка для підтвердження установки будильника -->
+                <button class="btn submit-button" id="submitButton" type="submit">Встановити будильник</button>
+              </form>
+              <div class="set-alarm-container">
+                <div class="set-alarm-container-title mb">Будильники</div>
+                <!-- Контейнер для відображення встановлених будильників -->
+                <div class="alarms-container" id= "alarms-container"></div>
+              </div>
+            </div>
+          </div>
+    </main>
+    <footer></footer>
+    <script src="./task5.js"></script>
+</body>
+
+</html>
